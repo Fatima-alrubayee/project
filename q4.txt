@@ -1,0 +1,26 @@
+JaveScript code:
+
+var a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+
+
+
+ reverse(a);
+
+
+
+function reverse(sentence) {
+
+    var reversed = [];
+  
+  
+          sentence.forEach(function (word) {
+  
+            reversed.push(word.split('').reverse().join(''));
+ 
+                 });
+    
+  
+    return reversed.join(' ');
+ 
+
+      
