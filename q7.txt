@@ -1,0 +1,65 @@
+JavaScript code:
+
+b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
+
+var  c = [];
+
+var m=[];
+
+ 
+
+multiply (b,c);
+
+cross(b,c,m);
+
+
+function multiply (arr1,arr2){
+
+var s = 0;
+
+for(var i=0; i< arr1.length; i++) {
+
+
+ s= ((arr1[i]*2)/3)+0.5;
+
+ arr2.push(s);
+
+ }
+   
+ console.log(arr2);
+
+}
+
+
+
+function cross(array1,array2,x){
+ 
+ var v=0;
+
+  for(var i=0; i< array1.length; i++){
+ 
+    for(var j=0; j< array2.length; j++){
+ 
+      v=array1[i]*array2[j];
+ 
+       x.push(v);
+  
+     }
+  
+ 
+  }
+
+  console.log(x);
+
+}
+
+
+ruby code:
+
+b= [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+
+b.each do |i|
+  s=((i*2)/3)+0.5
+ puts s
+ end
+ 
