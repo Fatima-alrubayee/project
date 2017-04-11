@@ -1,0 +1,70 @@
+JavaScript:
+
+var b= [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
+
+odd_even(b);
+function odd_even(s){
+for (var i=0; i<s.length;i++){
+     if(s[i]%2===0){
+      s[i]=s[i]*2;
+      console.log(i);
+      }
+  
+  if(s[i]%2!==0){
+     s[i]=s[i]-1;
+   console.log(i);
+     }
+
+  if(s[i]%5===0){
+      console.log(Math.pow(2, s[i]));
+
+      }
+ 
+ if(s[i]%10===0){
+ 
+   for (var j=0; j<=s[i];j+=10){
+  
+    console.log(j);
+
+     }
+ 
+   }
+  
+ }
+
+}
+
+
+Ruby code:
+
+b= [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+
+b.each do |i|
+ 
+  if (i %2 !=0) then 
+
+    puts i*2 
+
+  end
+  
+if (i%2 ==0) then
+ 
+ puts i-1
+
+  end
+ 
+ if(i%5==0)
+   
+ puts 2**i
+  
+end
+
+  if(i%10==0)
+  
+  (0..i).step(10) do |i|
+
+      end
+
+   end
+
+end
