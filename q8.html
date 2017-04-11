@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <style>
+            .box {
+                background-color: lightgrey;
+                width: 100px;
+                border: 15px solid green;
+                padding: 15px;
+                margin: 15px;
+            }
+    </style>
+    <body>
+        <p>text area<input type="text" name="n1" id="n1" onkeyup="sync()" class="box"></p>
+        <p><input type="text" name="n2" id="n2"/></p>
+        <p><input type="text" name="n2" id="n3"/></p>
+        <p><input type="text" name="n2" id="n4"/></p>
+        <p><input type="text" name="n5" id="n5"/></p>
+        
+        <script>
+            function sync(){
+                
+              var n1 = document.getElementById('n1');
+              var n2 = document.getElementById('n2');
+              var n3 = document.getElementById('n3');
+              var n4 = document.getElementById('n4');
+              var n5 = document.getElementById('n5');
+              n2.value = n1.value;
+              n3.value = n1.value;
+              n4.value = n1.value;
+              n5.value = n1.value;
+              
+            }
+        </script>
+    </body>
+</html>
