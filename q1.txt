@@ -1,0 +1,32 @@
+JavaScript code:
+
+var a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+
+capitalizes(a);
+function capitalizes(array){
+  var i=2;
+  for (var j =0; j < array.length; j++){
+      if(j==i){
+        console.log(array[j].toUpperCase());
+        i=i+3; 
+         }
+   else{
+       console.log(array[j]);
+     }
+  }
+}
+
+
+Ruby code:
+
+a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"]
+
+
+(0..(a.length)).step(3).each do |index|
+ 
+ 
+ puts a[index].upcase
+
+
+end
+
