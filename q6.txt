@@ -1,0 +1,61 @@
+JavaScript code
+
+var b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
+
+var new_array = [];
+
+var sum=[];
+
+
+
+console.log(b);
+
+ multiply (b,new_array);
+
+ 
+addition(b,new_array);
+
+
+function multiply (arr1,arr2){
+
+  var s = 0;
+
+for(var i=0; i< arr1.length; i++) {
+
+ s= (arr1[i]*10)-5;
+
+ arr2.push(s);
+   
+ }
+   
+ console.log(arr2);
+
+}
+
+
+
+function addition(arr1,arr2){
+
+  var result=0;
+ 
+ for(var i=j=0; i< arr1.length && j<arr2.length;j++, i++){
+ 
+     result=arr1[i]+arr2[j];
+ 
+   sum.push(result);
+ 
+ }
+
+  console.log(sum);
+}
+
+
+Ruby code:
+
+b= [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+
+b.each do |i|
+  s=(i*10)-5
+ puts s
+ end
+ 
